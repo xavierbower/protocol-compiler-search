@@ -1,14 +1,13 @@
 {
-  "generatedAt": "2026-07-31T01:42:06.053Z",
-  "total": 123896,
+  "generatedAt": "2026-07-31T01:59:12.145Z",
+  "total": 90700,
   "libraries": {
     "protocols": 23466,
     "qa": 36897,
-    "analyses": 59354,
+    "analyses": 26158,
     "literature": 4179
   },
   "sources": {
-    "biotools": 33196,
     "cran": 19947,
     "europepmc": 17858,
     "qiime2": 13253,
@@ -32,9 +31,9 @@
     "addgene": 48
   },
   "tiers": {
-    "open": 56982,
-    "unknown": 66760,
-    "restricted": 154
+    "open": 44644,
+    "unknown": 46008,
+    "restricted": 48
   },
   "fields": {
     "id": "id",

@@ -21,6 +21,7 @@ const PAGE = 60;
 let DATA = [];
 let HAY = [];
 let META = null;
+let loaded = false;
 const state = { q: '', library: new Set(), tier: new Set(), source: new Set(), shown: PAGE };
 
 const $ = (id) => document.getElementById(id);
@@ -35,6 +36,7 @@ async function load() {
     DATA = cat;
     META = meta;
     HAY = DATA.map((d) => (d.t + ' ' + (d.g || []).join(' ') + ' ' + (d.sn || '') + ' ' + d.s).toLowerCase());
+    loaded = true;
     buildFacets();
     $('foot').innerHTML =
       `<b>${DATA.length.toLocaleString()}</b> records across protocols · Q&amp;A · analyses` +
@@ -133,9 +135,14 @@ function card(d) {
 }
 
 function render() {
+  const box = $('results');
+  if (!loaded) {
+    $('stat').textContent = 'indexing the corpus — one moment…';
+    box.innerHTML = '<div class="empty">Loading ~124k records… first load is a few seconds.</div>';
+    return;
+  }
   const hits = searchHits();
   meter(hits);
-  const box = $('results');
   const active = state.library.size + state.tier.size + state.source.size;
   $('stat').textContent =
     `${hits.length.toLocaleString()} result${hits.length === 1 ? '' : 's'}` +
@@ -172,4 +179,5 @@ window.addEventListener('scroll', () => {
   }
 });
 
+render(); // show the loading state immediately
 load();
