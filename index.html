@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Protocol Compiler — Corpus Search</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <span class="mark">⌗</span>
+        <h1>Protocol Compiler</h1>
+        <span class="tagline">corpus search</span>
+      </div>
+      <button id="theme" class="theme-btn" title="Toggle theme" aria-label="Toggle theme">◑</button>
+    </header>
+
+    <div class="search-wrap">
+      <input id="q" type="search" placeholder="Search protocols, Q&amp;A threads, and analyses…" autocomplete="off" autofocus />
+      <div class="readout">
+        <span class="stat mono" id="stat">loading catalog…</span>
+        <span class="meter" id="meter" title="license mix of current results"></span>
+        <span class="legend">
+          <span><b style="background:var(--open)"></b>open</span>
+          <span><b style="background:var(--unknown)"></b>unknown</span>
+          <span><b style="background:var(--restricted)"></b>restricted</span>
+        </span>
+      </div>
+    </div>
+
+    <main class="layout">
+      <aside class="facets">
+        <section><h3>Library</h3><div id="f-library" class="fg"></div></section>
+        <section>
+          <h3>Licensing</h3>
+          <div id="f-tier" class="fg"></div>
+          <p class="hint">Open = full text is servable. Unknown/Restricted show a snippet or title with a link to the original — a provenance link is attribution, not a redistribution grant.</p>
+        </section>
+        <section><h3>Source</h3><div id="f-source" class="fg scroll"></div></section>
+      </aside>
+      <section class="results" id="results" aria-live="polite"></section>
+    </main>
+
+    <footer class="foot" id="foot"></footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

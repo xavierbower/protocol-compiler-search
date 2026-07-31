@@ -1,0 +1,51 @@
+{
+  "generatedAt": "2026-07-31T01:42:06.053Z",
+  "total": 123896,
+  "libraries": {
+    "protocols": 23466,
+    "qa": 36897,
+    "analyses": 59354,
+    "literature": 4179
+  },
+  "sources": {
+    "biotools": 33196,
+    "cran": 19947,
+    "europepmc": 17858,
+    "qiime2": 13253,
+    "stackexchange": 8001,
+    "protocolsio": 6940,
+    "galaxyhelp": 6387,
+    "biocsupport": 3941,
+    "seqanswers": 3810,
+    "protocolexchange": 2115,
+    "bioconductor": 1722,
+    "workflowhub": 1506,
+    "github": 1121,
+    "seqera": 1017,
+    "dockstore": 921,
+    "openwetware": 684,
+    "galaxytraining": 539,
+    "biostars": 488,
+    "zenodo": 185,
+    "nfcore": 139,
+    "carpentries": 78,
+    "addgene": 48
+  },
+  "tiers": {
+    "open": 56982,
+    "unknown": 66760,
+    "restricted": 154
+  },
+  "fields": {
+    "id": "id",
+    "s": "source",
+    "l": "library",
+    "t": "title",
+    "lic": "license",
+    "tier": "display tier",
+    "u": "url",
+    "g": "tags",
+    "sn": "snippet",
+    "w": "words"
+  }
+}
