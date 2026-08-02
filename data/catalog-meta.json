@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-31T01:59:12.145Z",
-  "total": 90700,
+  "generatedAt": "2026-08-02T05:52:07.622Z",
+  "total": 93909,
   "libraries": {
-    "protocols": 23466,
+    "protocols": 26675,
     "qa": 36897,
     "analyses": 26158,
     "literature": 4179
@@ -19,12 +19,16 @@
     "protocolexchange": 2115,
     "bioconductor": 1722,
     "workflowhub": 1506,
+    "neb": 1408,
     "github": 1121,
+    "qiagen": 1118,
     "seqera": 1017,
     "dockstore": 921,
     "openwetware": 684,
     "galaxytraining": 539,
     "biostars": 488,
+    "thermofisher": 462,
+    "biorad": 221,
     "zenodo": 185,
     "nfcore": 139,
     "carpentries": 78,
@@ -33,7 +37,7 @@
   "tiers": {
     "open": 44644,
     "unknown": 46008,
-    "restricted": 48
+    "restricted": 3257
   },
   "fields": {
     "id": "id",
