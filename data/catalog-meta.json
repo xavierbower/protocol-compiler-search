@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-02T05:52:07.622Z",
-  "total": 93909,
+  "generatedAt": "2026-08-02T23:20:24.683Z",
+  "total": 95765,
   "libraries": {
-    "protocols": 26675,
+    "protocols": 28531,
     "qa": 36897,
     "analyses": 26158,
     "literature": 4179
@@ -23,21 +23,27 @@
     "github": 1121,
     "qiagen": 1118,
     "seqera": 1017,
+    "promega": 994,
     "dockstore": 921,
     "openwetware": 684,
     "galaxytraining": 539,
+    "tenx": 509,
     "biostars": 488,
     "thermofisher": 462,
     "biorad": 221,
+    "miltenyi": 187,
     "zenodo": 185,
     "nfcore": 139,
+    "idt": 85,
     "carpentries": 78,
-    "addgene": 48
+    "addgene": 48,
+    "cellsignal": 44,
+    "fdabam": 37
   },
   "tiers": {
-    "open": 44644,
+    "open": 44681,
     "unknown": 46008,
-    "restricted": 3257
+    "restricted": 5076
   },
   "fields": {
     "id": "id",
