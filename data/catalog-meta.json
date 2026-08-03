@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-08-02T23:20:24.683Z",
-  "total": 95765,
+  "generatedAt": "2026-08-03T03:06:54.951Z",
+  "total": 95838,
   "libraries": {
-    "protocols": 28531,
+    "protocols": 28604,
     "qa": 36897,
     "analyses": 26158,
     "literature": 4179
   },
   "sources": {
     "cran": 19947,
-    "europepmc": 17858,
+    "europepmc": 17931,
     "qiime2": 13253,
     "stackexchange": 8001,
     "protocolsio": 6940,
@@ -41,8 +41,8 @@
     "fdabam": 37
   },
   "tiers": {
-    "open": 44681,
-    "unknown": 46008,
+    "open": 44700,
+    "unknown": 46062,
     "restricted": 5076
   },
   "fields": {
